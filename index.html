@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aplicație de monitorizare fitness pentru a ține evidența pașilor, caloriilor și antrenamentelor.">
+    <meta name="keywords" content="fitness, tracker, pași, calorii, antrenament, sănătate">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <button id="logout">Deconectare</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="step-counter">
+            <h2>Pași</h2>
+            <p id="steps">0</p>
+            <button id="add-step">Adaugă Pas</button>
+        </section>
+
+        <section id="calorie-tracker">
+            <h2>Calorii</h2>
+            <label for="calories-input">Calorii consumate</label>
+            <input type="number" id="calories-input" placeholder="Calorii consumate">
+            <button id="add-calories">Adaugă</button>
+            <p>Total Calorii: <span id="total-calories">0</span></p>
+        </section>
+
+        <section id="workout-timer">
+            <h2>Cronometru Antrenament</h2>
+            <p id="timer-display">00:00:00</p>
+            <button id="start-timer">Start</button>
+            <button id="stop-timer">Stop</button>
+            <button id="reset-timer">Reset</button>
+        </section>
+
+        <section id="water-tracker">
+            <h2>Monitorizare Hidratare</h2>
+            <p>Pahare băute: <span id="water-count">0</span></p>
+            <button id="add-water">Adaugă Pahar</button>
+        </section>
+
+        <section id="leaderboard">
+            <h2>Clasament Prieteni</h2>
+            <ol>
+                <li>Andrei - 12,000 pași</li>
+                <li>Maria - 10,500 pași</li>
+                <li>Alex - 9,800 pași</li>
+            </ol>
+        </section>
+
+        <button id="share-progress">Distribuie progresul</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fitness Tracker</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

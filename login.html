@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentificare - Fitness Tracker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Fitness Tracker - Autentificare</h1>
+
+        <section id="login-section">
+            <h2>Autentificare</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Utilizator" required autocomplete="username">
+                <input type="password" id="password" placeholder="Parolă" required autocomplete="current-password">
+                <button type="submit">Autentifică-te</button>
+            </form>
+            <p>Nu ai cont? <a href="#" id="show-register">Înregistrează-te</a></p>
+        </section>
+
+        <section id="register-section" style="display: none;">
+            <h2>Înregistrare</h2>
+            <form id="register-form">
+                <input type="text" id="new-username" placeholder="Utilizator" required autocomplete="username">
+                <input type="password" id="new-password" placeholder="Parolă" required autocomplete="new-password">
+                <button type="submit">Înregistrează-te</button>
+            </form>
+            <p>Ai deja un cont? <a href="#" id="show-login">Autentifică-te</a></p>
+        </section>
+    </main>
+
+    <script src="scripts/auth.js"></script>
+</body>
+
+</html>
